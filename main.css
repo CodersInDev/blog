@@ -1,7 +1,7 @@
 body {
 	font-family:"Helvetica";
 	text-align:center;
-	padding:50px 20px 0;
+/*	padding:50px 20px 0;*/
 	background:#f4f4f7;
 	color:#444;
 	margin:0
@@ -10,8 +10,8 @@ body {
 h1 {
 	font-size:65px;
 	line-height:1.2em;
-	border-bottom:#CCC solid 1px;
-	padding:20px 0;
+	/*border-bottom:#CCC solid 1px;*/
+	padding:200px 0 0 0;
 	text-align:center;
 	color: white;
 	}
@@ -42,4 +42,11 @@ header {
 
 .circle img {
 	border-radius: 50%;
+}
+
+#wrapper {
+	max-width: 1000px;
+	background: #66CCFF;
+	background: rgba(102, 204, 255, 0.7);
+	margin: 0 auto;
 }
