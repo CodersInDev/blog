@@ -1,24 +1,30 @@
+html, body{
+  border: 0px;
+  padding: 0px;
+  margin: -22px;
+ }
+
 body {
 	font-family:"Helvetica";
 	text-align:center;
 /*	padding:50px 20px 0;*/
 	background:#f4f4f7;
 	color:#444;
-	margin:0
+/*	margin:0*/
 	}
 
 h1 {
 	font-size:65px;
-	line-height:1.2em;
+/*	line-height:1.2em;*/
 	/*border-bottom:#CCC solid 1px;*/
-	padding:200px 0 0 0;
+	padding: 200px 0 0 0;
 	text-align:center;
-	color: white;
+	color: black;
 	}
 
 h2 {
 	font-weight:300;
-	color: white;
+	color: black;
 	}
 
 #featuredProj {
@@ -38,15 +44,30 @@ header {
 	background-repeat: no-repeat;
 	height: 500px;
 	background-size: cover;
+	opacity:0.5;
+	background-color: white;
 }
 
 .circle img {
 	border-radius: 50%;
 }
 
-#wrapper {
+/*#wrapper {
 	max-width: 1000px;
 	background: #66CCFF;
 	background: rgba(102, 204, 255, 0.7);
 	margin: 0 auto;
+}*/
+
+#team {
+	padding-top: 50px;
+}
+
+.profile {
+	display:inline-block;
+}
+
+#footer {
+	padding: 60px;
+	background-color:black;
 }
