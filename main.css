@@ -4,6 +4,7 @@ html, body{
   margin: -22px;
  }
 
+
 body {
 	font-family:"Helvetica";
 	text-align:center;
@@ -67,7 +68,7 @@ header {
 	display:inline-block;
 }
 
-#footer {
+footer {
 	padding: 60px;
 	background-color:black;
 }
