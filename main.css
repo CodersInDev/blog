@@ -20,7 +20,7 @@ h2 {
 	font-weight:300;
 	color: white;
 	}
-/*
+
 #featuredProj {
 	margin: 0 auto;
 
@@ -29,6 +29,8 @@ h2 {
 #featuredProj img {
 	display: block;
 	margin: 0 auto;
+	width: 100%;
+	max-width: 500px;
 }
 
 header {
@@ -37,38 +39,7 @@ header {
 	height: 500px;
 	background-size: cover;
 }
-*/
 
-html {
-	box-sizing: border-box;
-}
-
-*, *:before, *:after{
-	box-sizing: inherit;
-	}
-
-#wrapper {
-	display: flex;
-	flex-flow: column nowrap;
-}
-
-#featuredProj img {
-	display: block;
-	margin: 0 auto;
-	}
-
-#featuredProj {
-	flex-grow: 2;
-}
-
-header {
-	background-image: url('img/headerBackground.jpg');
-	background-repeat: no-repeat;
-	height: 500px;
-	background-size: cover;
-	flex-grow: 1;
-}
-
-#team {
-	flex-grow: 1;
+.circle img {
+	border-radius: 50%;
 }
