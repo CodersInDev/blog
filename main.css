@@ -2,7 +2,8 @@ body {
 	font-family:"Helvetica";
 	text-align:center;
 	padding:50px 20px 0;
-	background:#f4f4f7;color:#444;
+	background:#f4f4f7;
+	color:#444;
 	margin:0
 	}
 
@@ -12,14 +13,17 @@ h1 {
 	border-bottom:#CCC solid 1px;
 	padding:20px 0;
 	text-align:center;
+	color: white;
 	}
 
-h3 {
-	font-weight:300
+h2 {
+	font-weight:300;
+	color: white;
 	}
-
+/*
 #featuredProj {
 	margin: 0 auto;
+
 }
 
 #featuredProj img {
@@ -30,5 +34,41 @@ h3 {
 header {
 	background-image: url('img/headerBackground.jpg');
 	background-repeat: no-repeat;
+	height: 500px;
 	background-size: cover;
+}
+*/
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after{
+	box-sizing: inherit;
+	}
+
+#wrapper {
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+#featuredProj img {
+	display: block;
+	margin: 0 auto;
+	}
+
+#featuredProj {
+	flex-grow: 2;
+}
+
+header {
+	background-image: url('img/headerBackground.jpg');
+	background-repeat: no-repeat;
+	height: 500px;
+	background-size: cover;
+	flex-grow: 1;
+}
+
+#team {
+	flex-grow: 1;
 }
