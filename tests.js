@@ -8,9 +8,11 @@ test("Check the body has a background image", function(){
 //find the element with id hello in the iframe and get its contents
 	var header = target.getElementsByTagName("header")[0];
 // get bg image from external(!!!!) stylesheet
-	var style = window.getComputedStyle(header, null)
+	var style = window.getComputedStyle(header, null);
+	var bg = style.backgroundImage
+	var slice = bg.slice(-21)
 //check the bg image is correct url
-	equal(style.backgroundImage, "url(http://localhost:8000/blog/blog/img/headerBackground.jpg)", "it works!")
+	equal(slice, "headerBackground.jpg)", "it works!")
 
 });
 
@@ -46,10 +48,15 @@ test("Check there is an h2 that says 'tag line'", function(){
 
 
 
-// test("Check there is an element with ID featuredProj, and it has an image", function(){
-// //assign the iframe object to a varaiabl called iframe
-// 	var iframe = document.getElementById("iframe");
-// //extract the contents(DOM) of the iframe and assign to var target
-// 	var target = iframe.contentDocument || iframe.contentWindow.document;
-// //find featuredProj element
-// 	var proj = target.getElementById("featuredProj")
+test("Check there is an element with ID featuredProj, and it has an image", function(){
+//assign the iframe object to a varaiabl called iframe
+	var iframe = document.getElementById("iframe");
+//extract the contents(DOM) of the iframe and assign to var target
+	var target = iframe.contentDocument || iframe.contentWindow.document;
+//find featuredProj element
+	var proj = target.getElementById("featuredProj");
+
+	var image = proj.children[1].alt;
+
+	equal(image, "Featured Project", "HELLYES")
+});
