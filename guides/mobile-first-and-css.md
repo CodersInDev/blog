@@ -14,7 +14,9 @@ A small exemple: Here we change the color if the width of the screen is bigger t
          background: green;
       }
     }
+
     
+
 # References
 - http://www.zell-weekeat.com/how-to-write-mobile-first-css/
 - https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
