@@ -1,2 +1,2 @@
 # blog
-This is the readme for our blog
+This blog is hosted on http://codersindev.github.io/blog/ with the help of Harpjs 
