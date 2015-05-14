@@ -1,4 +1,108 @@
-/*define  box-sizing for all the elements */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/*HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/******************************************/
+
+* {
+    font-family: "Helvetica";
+}
+
+h1 {
+    font-size:65px;
+    padding: 30px 0 0 0;
+    text-align:center;
+    color: black;
+    }
+
+h2 {
+    font-weight:300;
+    color: black;
+    text-align: center;
+    font-size: 35px;
+    }
+
+h3 {
+    font-size: 30px;
+}
+
+.circle img {
+    border-radius: 50%;
+    max-width:100%;
+    max-height: 100%;
+}
+
+#team {
+    padding-left: 20px;
+    width: 200px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.profile {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.profile p {
+    padding-bottom: 30px;
+}
+
+footer {
+    text-align: center;
+    background-color:black;
+    position: absolute;
+    width: 100%;
+    padding: 50px 0;
+    color:white;
+}
+
+
+
+
+
+
+/*define  box-sizing for all the elements
 html {
     box-sizing: border-box;
 }
@@ -12,7 +116,7 @@ body{
 }
 
 /* define a flex container */
-#wrapper-all{
+/*#wrapper-all{
     display: flex;
     flex-flow: column nonwrap;
     background-color: #f8f8ff;
@@ -40,4 +144,4 @@ body{
 .tweet-time{
     color: #8899A6;
     font-size: 13px;
-}
+}*/
