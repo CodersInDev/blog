@@ -1,74 +1,156 @@
+/*reset default browser values*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-	font-family:"Helvetica";
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+body {
 	text-align:center;
-	padding:50px 20px 0;
-	background:#f4f4f7;
-	color:#444;
-	margin:0
+	background:#fff;
 	}
 
-h1 {
-	font-size:65px;
-	line-height:1.2em;
-	border-bottom:#CCC solid 1px;
-	padding:20px 0;
-	text-align:center;
-	color: white;
+
+	header {
+		/*background-image: url('img/headerBackground.jpg');*/
+		/*background-repeat: no-repeat;*/
+		/*background-size: cover;*/
+		/*opacity:0.5;*/
+		background-color: white;
+		height: 100vh;
+		font-family: Lato, sans-serif;
 	}
+
+	/*Logo*/
+	#logo{
+		/*border-radius: 50%;*/
+		width: 200px;
+		height: 200px;
+		background: red;
+		-moz-border-radius: 100px;
+		-webkit-border-radius: 100px;
+		border-radius: 100px;
+		color: #fff;
+		text-align: center;
+		margin: 0 auto;
+		line-height: 200px;
+		font-size: 60px;
+		margin-top: 10%;
+	}
+
+
+	header h1{
+   font-size: 120px;
+	margin-top: 10%;
+	letter-spacing: 10px;
+	}
+
+	header h2{
+	font-size: 60px;
+	margin-top: 2%;
+	}
+
+/*h1 {
+	font-size:65px;
+/*	line-height:1.2em;*/
+	/*border-bottom:#CCC solid 1px;*/
+	/*padding: 200px 0 0 0;
+	text-align:center;
+	color: black;*/
+	}*/
 
 h2 {
 	font-weight:300;
+	color: black;
+	}
+
+#featuredProj {
+	margin: 0 auto;
+	background-color: gray;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+#featuredProj img {
+	display: block;
+	margin: 0 auto;
+	height: 100%;
+	max-height: 500px;
+	padding: 0;
+}
+
+#team{
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+#team img{
+  max-width: 100%;
+}
+
+#team h3{
+	width: 100%;
+	position: absolute;
+	top: 100px;
+	margin:0 auto;
 	color: white;
-	}
-/*
-#featuredProj {
-	margin: 0 auto;
-
+	font-size: 55px;
+	text-align: center;
 }
 
-#featuredProj img {
-	display: block;
-	margin: 0 auto;
-}
 
-header {
-	background-image: url('img/headerBackground.jpg');
-	background-repeat: no-repeat;
-	height: 500px;
-	background-size: cover;
-}
-*/
-
-html {
-	box-sizing: border-box;
-}
-
-*, *:before, *:after{
-	box-sizing: inherit;
-	}
-
-#wrapper {
-	display: flex;
-	flex-flow: column nowrap;
-}
-
-#featuredProj img {
-	display: block;
-	margin: 0 auto;
-	}
-
-#featuredProj {
-	flex-grow: 2;
-}
-
-header {
-	background-image: url('img/headerBackground.jpg');
-	background-repeat: no-repeat;
-	height: 500px;
-	background-size: cover;
-	flex-grow: 1;
-}
-
-#team {
-	flex-grow: 1;
+footer {
+	background-color:black;
+	position: relative;
+	width: 100%;
+	padding: 50px 0;
 }
