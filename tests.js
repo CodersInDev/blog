@@ -10,7 +10,7 @@ test("Check the body has a background image", function(){
 // get bg image from external(!!!!) stylesheet
 	var style = window.getComputedStyle(header, null)
 //check the bg image is correct url
-	equal(style.backgroundImage, "url(http://localhost:8000/blog/img/headerBackground.jpg)", "it works!")
+	equal(style.backgroundImage, "url(http://localhost:8000/blog/blog/img/headerBackground.jpg)", "it works!")
 
 });
 
@@ -27,3 +27,29 @@ test("Check there is an h1 element that says 'Coders In Dev'", function(){
 
 	equal(h1, "Coders In Dev", "awesome")
 });
+
+
+
+
+test("Check there is an h2 that says 'tag line'", function(){
+//assign the iframe object to a varaiabl called iframe
+	var iframe = document.getElementById("iframe");
+//extract the contents(DOM) of the iframe and assign to var target
+	var target = iframe.contentDocument || iframe.contentWindow.document;
+// find header element
+	var header = target.getElementsByTagName("header")[0];
+// find h1 which is first child of header
+	var h2 = header.children[1].innerHTML;
+
+	equal(h2, "We are learning to code.", "awesome")
+});
+
+
+
+// test("Check there is an element with ID featuredProj, and it has an image", function(){
+// //assign the iframe object to a varaiabl called iframe
+// 	var iframe = document.getElementById("iframe");
+// //extract the contents(DOM) of the iframe and assign to var target
+// 	var target = iframe.contentDocument || iframe.contentWindow.document;
+// //find featuredProj element
+// 	var proj = target.getElementById("featuredProj")
