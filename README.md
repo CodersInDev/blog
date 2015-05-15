@@ -11,16 +11,6 @@ This is our website where you can follow our progress over the 8 weeks of our co
 #How
 
 You can find a live version at http://codersindev.github.io/blog/
-We use harp to host our application and you can do the same:
-
-```
-$ npm install -g harp
-$ cd Desktop
-$ git clone https://github.com/foundersandcoders/oursite.git
-$ cd oursite
-$ harp server
-```
-
 
 #User Stories
 
@@ -30,4 +20,4 @@ These are the people we are keeping in mind when designing our site.
 #What we're working on
 
 * Update the 'Meet the team' page with pop up biographies for each team member
-* Enable a blog post section where we can record our experiences
+* Use Harp markdown to generate posts
