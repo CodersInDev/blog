@@ -51,6 +51,7 @@ body {
     font-family: "Helvetica";
 }
 
+/************* MENU BAR **************/
 
 .menu {
     top: 15px;
@@ -166,7 +167,7 @@ body {
   text-decoration: underline;
 }
 
-
+/*********************************/
 
 header {
     margin: 0 auto;
@@ -208,18 +209,20 @@ h3 {
     float: left;
 }
 
-/*#Alex:focus #default{
+#team-profiles:focus~#member-story #default{
     display:none;
 }
 
-#Alex:focus #Alex-story {
-    display: block;*/
-}
+/*#Alex:focus #Alex-story {
+    display: block;
+}*/
 
 #member-story div{
     display: inline-block;
     width: 55%;
     padding: 20px;
+    background-color: gray;
+    height: 55vh;
 }
 
 #Alex-story {
@@ -242,53 +245,4 @@ footer {
     width: 100%;
     padding: 50px 0;
     color:white;
-/*    position: absolute;
-    bottom: 0;*/
 }
-
-
-
-
-/*define  box-sizing for all the elements
-html {
-    box-sizing: border-box;
-}
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
-body{
-  margin: 0;
-  padding: 0;
-}
-
-/* define a flex container */
-/*#wrapper-all{
-    display: flex;
-    flex-flow: column nonwrap;
-    background-color: #f8f8ff;
-    margin: auto;
-    padding: 15px;
-    border-top: 1px solid #E1E8ED;
-    border-bottom: 1px solid #E1E8ED;
-    font-size: 16px;
-}
-
-.tweet-content{
-    padding: 0 10px;
-    flex-grow: 2;
-}
-
-.tweet-content p{
-    margin: 0;
-}
-
-.twitter-user{
-    text-decoration: none;
-    color: #8899A6;
-}
-
-.tweet-time{
-    color: #8899A6;
-    font-size: 13px;
-}*/
