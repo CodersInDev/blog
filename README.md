@@ -1,7 +1,6 @@
 #Why
 
-We are sm
-Founders and Coders is a lot of great people doing great work. Our current website doesn't let the word know who we are or what we're up to. Building a new one will let us show off and should improve our chances of getting interesting projects to work on.
+We are Coders in Dev and we want to show you our work.
 
 #What
 

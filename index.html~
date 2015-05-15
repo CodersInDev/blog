@@ -7,18 +7,14 @@
 		<meta name="description" content="Founders and Coders blog">
 		<link rel="stylesheet" href="main.css">
 		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-		<link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic" rel="stylesheet" type="text/css">
-		<link href="http://fonts.googleapis.com/css?family=Raleway:400,300,700" rel="stylesheet" type="text/css">
 	</head>
 
 	<body>
 
 		<header class="section">
-			<div id="logo">CID</div>
-			<h1>We are</h1>
-			<h2>CODERS IN DEV</h2>
-			<h3>Our journey of learning to code</h3>
-			<h4>SCROLL DOWN TO SEE OUR FIRST STOP</h4>
+			<div id="logo">We are</div>
+			<h1>Coders In Dev</h1>
+			<h2>We are learning to code.</h2>
 		</header>
 
 		<div id="featuredProj" class="section">
@@ -42,4 +38,3 @@
 	</body>
 
 </html>
-
