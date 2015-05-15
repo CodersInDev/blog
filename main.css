@@ -111,7 +111,7 @@ body {
 	margin-top: 2%;
 	}
 
-header h4{
+	header h4{
 	font-family: Raleway;
 	font-size: 20px;
 	margin-top: 12%;
@@ -221,10 +221,30 @@ and (orientation : landscape) {
 
 	}
 	header h4{
+		font-size: 20px;
 		margin-top: 5%
 
 	}
 }
+
+
+/*nexus 7 in portrait*/
+@media only screen
+and (min-device-width : 603px)
+and (max-device-width : 797px)
+and (orientation : portrait) { /* STYLES GO HERE */
+    header h1 {
+		margin-top: 30%;
+		
+	}
+
+	
+	header h4{
+		font-size: 28px;
+		margin-top: 60%;
+	}
+}
+
 
 /*iPhone 6 Plus in portrait*/
 @media only screen
@@ -251,20 +271,29 @@ and (orientation : portrait) { /* STYLES GO HERE */
 		margin-top: 2%;
 	}
 	header h4{
-		font-size: 16px;
+		font-size: 28px;
 		margin-top: 80%;
 	}
 
 }
 
-/*iPhone 5 & 5S in landscape*/
-/*@media only screen*/
-/*and (min-device-width : 320px)*/
-/*and (max-device-width : 568px)*/
-/*and (orientation : landscape) { /!* STYLES GO HERE *!/*/
+/*iPhone 5 in landscape*/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape) { /* STYLES GO HERE */
+   header h4 {
+    font-size: 30px;
+    margin-top: 60%;
+} 
+}
 
-
-/*}*/
+@media only screen and (max-device-width: 480px) and (min-device-width: 320px) and (orientation: portrait){
+header h4 {
+font-size: 30px;
+margin-top: 70%;
+}
+}
 
 /*iPhone 2G-4S in landscape*/
 @media only screen
@@ -294,8 +323,8 @@ and (orientation : landscape) {
 		margin-top: 2%;
 	}
 	header h4{
-		font-size: 10px;
-		margin-top: 10%;
+		font-size: 16px;
+		margin-top: 3%;
 	}
 
 
@@ -323,11 +352,11 @@ and (orientation : portrait) {
 		letter-spacing: 10px;
 	}
 	header h3{
-		font-size: 30px;
+		font-size: 36px;
 		margin-top: 2%;
 	}
 	header h4{
-		font-size: 10px;
+		font-size: 20px;
 		margin-top: 70%;
 	}
 
