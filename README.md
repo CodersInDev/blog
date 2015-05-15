@@ -13,11 +13,13 @@ This is our website where you can follow our progress over the 8 weeks of our co
 You can find a live version at http://codersindev.github.io/blog/
 We use harp to host our application and you can do the same:
 
+```
 $ npm install -g harp
 $ cd Desktop
 $ git clone https://github.com/foundersandcoders/oursite.git
 $ cd oursite
 $ harp server
+```
 
 
 #User Stories
