@@ -116,7 +116,9 @@ footer {
     bottom: 0;*/
 }
 
-
+#Alex:hover~h3{
+  color: red;
+}
 
 
 /*define  box-sizing for all the elements
