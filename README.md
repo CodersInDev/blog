@@ -29,5 +29,5 @@ These are the people we are keeping in mind when designing our site.
 
 #What we're working on
 
-	* Update the 'Meet the team' page with pop up biographies for each team member
-	* Enable a blog post section where we can record our experiences
+* Update the 'Meet the team' page with pop up biographies for each team member
+* Enable a blog post section where we can record our experiences
