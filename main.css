@@ -131,7 +131,7 @@ body {
 	left: 15px;
 	position: fixed;
 	width: 100%;
-  background: #918888;	  
+  background: #918888;
   z-index: 999;
 	overflow: hidden;
   max-height: 0;
@@ -243,8 +243,19 @@ h2 {
 	}
 
 #featuredProj {
-	margin: 0 auto;
 	background-color: rgba(128, 128, 128, 0.23);
+	padding-bottom: 10%;
+}
+
+#featuredProj h3{
+	font-family: Raleway;
+	font-size: 40px;
+	margin-top: 2%;
+}
+
+#featuredProj p{
+	font-family: Raleway;
+	font-size: 20px;
 }
 
 h3 {
@@ -258,6 +269,7 @@ h3 {
 	max-width: 50%;
 	max-height: 50%;
 	display:block;
+	border: 10px solid #fff;
 }
 
 #team{
@@ -366,10 +378,10 @@ and (max-device-width : 797px)
 and (orientation : portrait) { /* STYLES GO HERE */
     header h1 {
 		margin-top: 30%;
-		
+
 	}
 
-	
+
 	header h4{
 		font-size: 28px;
 		margin-top: 60%;
@@ -409,14 +421,14 @@ and (orientation : portrait) { /* STYLES GO HERE */
 }
 
 /*iPhone 5 in landscape*/
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px) 
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
 and (orientation : landscape) { /* STYLES GO HERE */
    header h4 {
     font-size: 30px;
     margin-top: 60%;
-} 
+}
 }
 
 @media only screen and (max-device-width: 480px) and (min-device-width: 320px) and (orientation: portrait){
