@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Coders In Dev</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Founders and Coders blog">
+		<link rel="stylesheet" href="main.css">
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+
+		<header class="section">
+			<div id="logo">We are</div>
+			<h1>Coders In Dev</h1>
+			<h2>We are learning to code.</h2>
+		</header>
+
+		<div id="featuredProj" class="section">
+			<h3>Featured Project</h3>
+			<img src="img/blogScreenshot.png" alt="Featured Project">
+			<a href="https://github.com/CodersInDev">See the project</a>
+			<a href="">Read about the process</a>
+		</div>
+
+		<div id="team">
+			<a href="team.html">
+			<h3>Meet the Team</h3>
+			<img src="img/team.jpg" alt="The Team"></a>
+		</div>
+
+
+		<footer>
+			A Founders and Coders blog by Alex, Anita, Claire, and Simon
+		</footer>
+
+	</body>
+
+</html>
