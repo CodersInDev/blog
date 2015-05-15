@@ -14,34 +14,28 @@ test("Check the document has loaded fully", function(){
 
 
 
-test("Check the body has a background image", function(){
+test("Check the title is Coders in Dev", function(){
 //assign the iframe object to a varaiabl called iframe
 	var iframe = document.getElementById("iframe");
 //extract the contents(DOM) of the iframe and assign to var target
 	var target = iframe.contentDocument || iframe.contentWindow.document;
-//find the element with id hello in the iframe and get its contents
-	var header = target.getElementsByTagName("header")[0];
-// get bg image from external(!!!!) stylesheet
-	var style = window.getComputedStyle(header, null);
-	var bg = style.backgroundImage
-	var slice = bg.slice(-21)
-//check the bg image is correct url
-	equal(slice, "headerBackground.jpg)", "it works!")
+//find the title in the iframe and get its contents
+	var title = target.title;
+//check the title has a right value
+	equal(title, "Coders In Dev", "it works!");
 
 });
 
 
-test("Check there is an h1 element that says 'Coders In Dev'", function(){
+test("Check that logo says CID", function(){
 //assign the iframe object to a varaiabl called iframe
 	var iframe = document.getElementById("iframe");
 //extract the contents(DOM) of the iframe and assign to var target
 	var target = iframe.contentDocument || iframe.contentWindow.document;
-// find header element
-	var header = target.getElementsByTagName("header")[0];
-// find h1 which is first child of header
-	var h1 = header.children[0].innerHTML;
+// find logo element value
+	var logo = target.getElementById('logo').innerHTML;
 
-	equal(h1, "Coders In Dev", "awesome")
+	equal(logo, "CID", "awesome");
 });
 
 
@@ -57,7 +51,7 @@ test("Check there is an h2 that says 'tag line'", function(){
 // find h1 which is first child of header
 	var h2 = header.children[1].innerHTML;
 
-	equal(h2, "We are learning to code.", "awesome")
+	equal(h2, "We are", "awesome")
 });
 
 
@@ -70,12 +64,42 @@ test("Check there is an element with ID featuredProj, and it has an image", func
 //find featuredProj element
 	var proj = target.getElementById("featuredProj");
 
-	var image = proj.children[1].alt;
+	var image = proj.children[1].children[0].alt;
 
 	equal(image, "Featured Project", "HELLYES")
 });
 
+test("Check the menu is hidden on front page", function(){
+//assign the iframe object to a varaiabl called iframe
+	var iframe = document.getElementById("iframe");
+//extract the contents(DOM) of the iframe and assign to var target
+	var target = iframe.contentDocument || iframe.contentWindow.document;
+//find featuredProj element
+	var navbar = target.getElementById('navbar');
+//get external stysheet rule for navbar
+	var style = window.getComputedStyle(navbar, null);
 
+	equal(style.display, "none", "HELLYES")
+});
+
+setTimeout(function() { // this is only here so you can see the page change!
+  test("Check that the navbar on click display menu", function(assert){
+    var done = assert.async();
+    var iframe = document.getElementById('iframe');
+    var target = iframe.contentDocument || iframe.contentWindow.document;
+    target.getElementById('navbar').click();
+
+    // wait for the next page to load
+    setTimeout(function() {
+      var navbar = target.getElementById('navbar');
+//get external stysheet rule for navbar
+	var style = window.getComputedStyle(navbar, null);
+      // console.log('>>> '+hello)
+      notEqual(style, 'none', 'as expected');
+      done();
+    }, 1000);
+  });
+}, 2000); 
 
 setTimeout(function() { // this is only here so you can see the page change!
   test("Check there is a link to meet the team and it goes to team.html", function(assert){
@@ -92,6 +116,7 @@ setTimeout(function() { // this is only here so you can see the page change!
       // console.log('>>> '+hello)
       equal(alex, 'Alex', 'as expected');
       done();
-    }, 200);
+    }, 1000);
   });
-}, 2000); 
+}, 4000); 
+
