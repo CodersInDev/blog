@@ -9,15 +9,36 @@
 	</head>
 
 	<body>
+
+		<input class="navbar" id="navbar" type="checkbox"><label for="navbar" class="menu"></label>
+
+	    <nav class="list">
+	        <ul>
+	            <li><a href="index.html">Main Page</a>
+	            </li>
+	            <li><a href="team.html">Team Bios</a>
+	            </li>
+	            <li><a href="#">Projects</a>
+	            </li>
+	            <li><a href="#">Cooperative</a>
+	            </li>
+	            <li><a href="#">About</a>
+	            </li>
+	        </ul>
+	    </nav>
+
+
+
 		<header>
 			<h1>The Team</h1>
 			<h2>Learn a bit more about us!</h2>
 		</header>
 
-    <div id="team-profiles">
 
-		<div class="profile" id="Alex">
-			<a href="" class="circle"><img src="http://placebear.com/200/200" alt="Alex  "></a>
+        <div id="team-profiles">
+        	<div class="profile" id="Alex" tabindex="0">
+			<a class="circle"><img src="http://placebear.com/200/200" alt="Alex  "></a>
+
 			<h3>Alex</h3>
 			<p>Fluent in Bulgarian</p>
 			<!-- <a href="http://github.com/rub1e"><img class="socialicon" src="img/github.png"></a>
@@ -35,7 +56,7 @@
 		</div>
 
 		<div class="profile" id="Claire">
-			<a href="http://twitter.com/nofootnotes" class="circle"><img src="http://placebear.com/200/200" alt="Claire"></a>
+			<a class="circle"><img src="http://placebear.com/200/200" alt="Claire"></a>
 			<h3>Claire</h3>
 			<p>Half Irish, half Chinese</p>
 			<!-- <a href="http://github.com/nofootnotes"><img class="socialicon" src="img/github.png"></a>
@@ -54,7 +75,11 @@
         </div>
 
         <div id="member-story">
-			<p>Select one of us to know a bit more</p>
+			<div id="default">Select one of us to know a bit more</div>
+			<div id="Alex-story">This is Alex's bio</div>
+			<!-- <div id="Anita-story">This is Anita's bio</div>
+			<div id="Claire">This is Claire's story</div>
+			<div id="Simon">This is Simon's story</div> -->
         </div>
 
 

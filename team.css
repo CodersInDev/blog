@@ -50,6 +50,124 @@ body {
     display: inline-block;
     font-family: "Helvetica";
 }
+
+
+.menu {
+    top: 15px;
+    left: 15px;
+    position: fixed;
+    z-index: 999;
+  display: inline-block;
+  border: 0;
+  background: none;
+  outline: 0;
+  padding: 0;
+  cursor: pointer;
+  border-bottom: 4px solid currentColor;
+  width: 28px;
+  transition: border-bottom 1s ease-in-out;
+  -webkit-transition: border-bottom 1s ease-in-out;
+}
+
+.menu::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.menu:before {
+  content: "";
+  display: block;
+  border-bottom: 4px solid currentColor;
+  width: 100%;
+  margin-bottom: 5px;
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.menu:after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid currentColor;
+  width: 100%;
+  margin-bottom: 5px;
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.navbar {
+  display: none;
+  background: #918888;
+}
+
+.navbar:checked ~ .menu {
+    top: 15px;
+    left: 15px;
+    position: fixed;
+  border-bottom: 4px solid transparent;
+  transition: border-bottom 0.8s ease-in-out;
+  -webkit-transition: border-bottom 0.8s ease-in-out;
+}
+
+.navbar:checked ~ .menu:before {
+  -ms-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+      transform: rotate(-405deg) translateY(1px) translateX(-3px);
+  -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.navbar:checked ~ .menu:after {
+  -ms-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+      transform: rotate(405deg) translateY(-4px) translateX(-5px);
+  -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.list {
+    top: 40px;
+    left: 15px;
+    position: fixed;
+    width: 100%;
+  background: #918888;    
+  z-index: 999;
+    overflow: hidden;
+  max-height: 0;
+  -webkit-transition: max-height 0.5s ease-in-out;
+          transition: max-height 0.5s ease-in-out;
+}
+
+.navbar:checked ~ .list {
+  max-height: 100%;
+  width: 100%;
+  -webkit-transition: max-height 0.5s ease-in-out;
+          transition: max-height 0.5s ease-in-out;
+}
+
+.list a {
+  color: inherit;
+}
+
+
+.list ul {
+  margin: 0;
+  padding: 0;
+}
+
+.list ul li {
+  list-style: none;
+  font-size: 25px;
+  padding: 5px 0;
+}
+.list ul li a {
+  text-decoration: none;
+}
+.list ul li a:hover {
+  text-decoration: underline;
+}
+
+
+
 header {
     margin: 0 auto;
 }
@@ -80,7 +198,7 @@ h3 {
 }
 
 
-div#team-profiles{
+#team-profiles{
     padding-left: 20px;
     width: 25%;
     text-align: center;
@@ -90,10 +208,22 @@ div#team-profiles{
     float: left;
 }
 
-#member-story p{
+/*#Alex:focus #default{
+    display:none;
+}
+
+#Alex:focus #Alex-story {
+    display: block;*/
+}
+
+#member-story div{
     display: inline-block;
     width: 55%;
     padding: 20px;
+}
+
+#Alex-story {
+    display: none;
 }
 
 /*.profile {
