@@ -180,7 +180,48 @@ footer {
 
 
 /*media queries*/
+@media screen and (min-device-width: 1200px) {
+	header h1 {
+		margin-top: 4%;
+		font-size: 110px;
+	}
+	header h2{
 
+		font-size: 100px;
+
+	}
+	header h3{
+		font-size: 40px;
+
+	}
+	header h4{
+		margin-top: 5%
+
+	}
+
+}
+
+@media screen and (min-device-width: 966px) {
+	
+	header h1 {
+		margin-top: 4%;
+		font-size: 110px;
+	}
+	header h2{
+
+		font-size: 100px;
+
+	}
+	header h3{
+		font-size: 40px;
+
+	}
+	header h4{
+		margin-top: 5%
+
+	}
+
+}
 /*iPhone 6 Plus in landscape*/
 @media only screen
 and (min-device-width : 414px)
